@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coral reefs</title>
+    <style>
+      body {
+        background: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+        font-family: system-ui;
+      }
+      h1 {
+        text-align: center;
+        color: black;
+        border-radius: 10px;
+      }
+
+      h2 {
+        text-align: center;
+        font-family: system-ui;
+      }
+
+      img {
+        display: block;
+        margin: auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      p {
+        text-align: center;
+        padding: 1px 400px 30px 400px;
+        font-size: 20px;
+      }
+
+      h3 {
+        text-align: center;
+        padding: 0%;
+      }
+
+      ul {
+        padding: 0%;
+        text-align: center;
+      }
+
+      li {
+        display: block;
+        text-align: center;
+        padding: 10px;
+      }
+
+      button {
+        display: block;
+        margin: 30px auto;
+        padding: 20px;
+        border-radius: 30px;
+        font-size: large;
+      }
+      button:hover {
+        transition: all 200ms ease-in-out;
+        background: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Coral Reefs</h1>
+    <h2>Come explore the beautiful coral reef ecosystems of the ocean</h2>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/069/463/original/coral_reef.jpg?1677589045"
+      alt="Coral Reef"
+      width="500"
+    />
+    <p>
+      A coral reef is an underwater ecosystem characterized by reef-building
+      corals.
+    </p>
+    <br />
+    <h3>Types of Coral reefs</h3>
+    <ul>
+      <li>Fringing reefs</li>
+      <li>Barrier reefs</li>
+      <li>Atolls</li>
+      <li>Patch reefs</li>
+    </ul>
+    <br />
+    <h3>Animals that live in the Coral reefs</h3>
+    <ul>
+      <li>Fish</li>
+      <li>Corals</li>
+      <li>Lobsters</li>
+      <li>Clams</li>
+      <li>Seahorses</li>
+      <li>Sponges</li>
+      <li>Sea turtles</li>
+    </ul>
+    <br />
+    <h3>Benefits of Coral reefs</h3>
+    <p>
+      Coral reefs protect coastlines from storms and erosion, provide jobs for
+      local communities, and offer opportunities for recreation. They are also
+      are a source of food and new medicines. Over half a billion people depend
+      on reefs for food, income, and protection. Fishing, diving, and snorkeling
+      on and near reefs add hundreds of millions of dollars to local businesses.
+      The net economic value of the world’s coral reefs is estimated to be
+      nearly tens of billionsoffsite link of U.S. dollars per year. These
+      ecosystems are culturally important to indigenous people around the world.
+    </p>
+    <br />
+    <h3>Threats to Coral reefs</h3>
+    <p>
+      Unfortunately, coral reef ecosystems are severely threatened. Some threats
+      are natural, such as diseases, predators, and storms. Other threats are
+      caused by people, including pollution, sedimentation, unsustainable
+      fishing practices, and climate change, which is raising ocean temperatures
+      and causing ocean acidification. Many of these threats can stress corals,
+      leading to coral bleaching and possible death, while others cause physical
+      damage to these delicate ecosystems. During the 2014-2017 coral bleaching
+      event, unusually warm waters (partially associated with a strong El Niño)
+      affected 70% of coral reef ecosystems worldwide. Some areas were hit
+      particularly hard, like the Great Barrier Reef in Australia, where
+      hundreds of miles of coral were bleached. Corals are able to recover from
+      bleaching events if conditions improve before they die, though it can take
+      many years for the ecosystems to fully heal. Scientists are also testing
+      new ways to help coral reef ecosystems, such as growing coral in a nursery
+      and then transplanting it to damaged areas.
+      <br />
+      <br />
+      <a
+        href="https://www.noaa.gov/education/resource-collections/marine-life/coral-reef-ecosystems"
+        target="_blank"
+      >
+        Click here for more information</a
+      >
+    </p>
+    <button>Save the Reefs</button>
+    <p>Created by Tamara Joseph</p>
+    <script>
+      function saveTheReefs() {
+        let email = prompt("What is your email?");
+        let help = prompt("Do you want to save the reefs?");
+        help = help.toLowerCase();
+        let h1 = document.querySelector("h1");
+
+        if (help === "yes") {
+          h1.innerHTML = "Thank you for saving the reefs!";
+        } else {
+          h1.innerHTML = "Thank you for your time.";
+        }
+      }
+
+      let saveTheReefsButton = document.querySelector("button");
+
+      saveTheReefsButton.addEventListener("click", saveTheReefs);
+    </script>
+  </body>
+</html>
